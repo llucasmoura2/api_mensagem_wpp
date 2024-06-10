@@ -12,6 +12,10 @@ class CoinConversorService:
         if resposta.status_code == 400:
             return resposta.json().get('message')
         return resposta.json().get(f'{coin_origin}{coin_target}').get('bid')
+
+
+#site usado para api de cotação de moedas "https://docs.awesomeapi.com.br/api-de-moedas"
+        
     
 
  
